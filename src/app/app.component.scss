@@ -1,0 +1,31 @@
+.toolbar {
+  height: 5vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vh;
+  font-style: italic;
+  font-weight: 400;
+  color: #fff;
+}
+
+#particles-js {
+  height: 95vh;
+  background: #000;
+}
+
+#particles-js.extreme-space {
+  background-image: url("src/assets/flying_sheep.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#particle-configs {
+  position: absolute;
+  margin: 25px;
+}
+
+#play-pause {
+  position: absolute;
+  margin: 25px;
+  bottom: 0;
+  font-size: 15px;
+}
