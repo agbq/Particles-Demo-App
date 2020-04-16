@@ -1,0 +1,36 @@
+<mat-toolbar class="toolbar">PARTICLE ENGINE DEMO</mat-toolbar>
+<div>
+  <mat-button-toggle-group id="particle-configs" vertical=true>
+    <mat-button-toggle value="rain" aria-label="Rain" (click)="loadParticlesJS(rain)">
+      Rain
+    </mat-button-toggle>
+    <mat-button-toggle value="snow" aria-label="Snow" (click)="loadParticlesJS(snow)">
+      Snow
+    </mat-button-toggle>
+    <mat-button-toggle value="leaves" aria-label="Leaves" (click)="loadParticlesJS(leaves)">
+      Leaves
+    </mat-button-toggle>
+    <mat-button-toggle value="fireflies" aria-label="Fireflies" (click)="loadParticlesJS(fireflies)">
+      Fireflies
+    </mat-button-toggle>
+    <mat-button-toggle value="space" aria-label="Space " (click)="loadParticlesJS(space)">
+      Space
+    </mat-button-toggle>
+    <mat-button-toggle value="extremeSpace" aria-label="Extreme Space " (click)="loadParticlesJS(extremeSpace)">
+      Extreme Space
+    </mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div>
+  <button mat-mini-fab color="accent" id="play-pause" *ngIf="isPlaying" value="pause" aria-label="Pause"
+    (click)="pause()">
+    <fa-icon [icon]="faPause"></fa-icon>
+  </button>
+  <button mat-mini-fab color="accent" id="play-pause" *ngIf="!isPlaying && selectedConfig" value="play"
+    aria-label="Play" (click)="play()">
+    <fa-icon [icon]="faPlay"></fa-icon>
+  </button>
+</div>
+
+<div id="particles-js" [class.extreme-space]="selectedConfig==extremeSpace"></div>
