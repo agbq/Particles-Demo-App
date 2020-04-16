@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Installation and running app locally
 
-1. `git clone git@github.com:agbq/Particles-Demo-App.git`
+1. `git clone https://github.com/agbq/Particles-Demo-App.git`
 2. `cd Particles-Demo-App`
 3. `npm i`
 4. `npm i -g @angular/cli`
