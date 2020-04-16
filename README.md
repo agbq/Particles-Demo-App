@@ -35,16 +35,16 @@ For optimal performance, the component destroys the existing pJS object before l
 
 ## Extensibility - adding new particle configurations
 
-A [demo](https://vincentgarreau.com/particles.js/#default) of particles.js, can be used to quickly create and download new configurations.
+A [demo](https://vincentgarreau.com/particles.js/#default) of particles.js can be used to quickly create and download new configurations.
 
 Configuration [example](https://github.com/VincentGarreau/particles.js/blob/master/demo/particles.json)
 
 Configuration [options](https://github.com/VincentGarreau/particles.js#options)
 
-1. Create a new configuration using the demo above or by duplicating and modifying an existing configuration
-2. Add it to the particles-config.ts file, exporting it as a constant
-3. Import it in the app.component.ts file and add it as a property of the component
-4. Add it to the mat-button-toggle-group in the app.component.html file following the pattern of the existing configurations
+1. Create a new configuration using the demo above or by duplicating and modifying an existing configuration.
+2. Add it to the particles-config.ts file, exporting it as a constant.
+3. Import it in the app.component.ts file and add it as a property of the component.
+4. Add it to the mat-button-toggle-group in the app.component.html file following the pattern of the existing configurations.
 
 ## Code scaffolding
 
